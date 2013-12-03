@@ -5,11 +5,32 @@ akuraru Segue kit is value to pass to the destination library
 
 ## How to use
 
+When you wants to set some transition to ViewController,written as follows:
+
+``` objc
+[self performSegueWithIdentifier:@"Segue ID" sender:nil];
+
+/////
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"Segue ID"]) {
+        NextViewController *controller = segue.destinationViewController;
+        // make settings for ViewController
+    }
+}
+```
+.
+
+By using this library,written as follows:
+
 ``` objc
 [self performSegueWithIdentifier:@"Segue ID" block:^(NextViewController *controller){
     // make settings for ViewController
 }];
 ```
+
+## Attention
+
+Then when you want to override the prepareForSegue:sender:,it must call super message.
 
 ## Usage
 
