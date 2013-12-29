@@ -24,4 +24,6 @@
     [self performSegueWithIdentifier:identifier sender:block];
 }
 
+- (IBAction)AKBack:(UIStoryboardSegue *)segue {}
+
 @end

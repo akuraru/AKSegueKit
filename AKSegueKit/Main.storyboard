@@ -45,9 +45,11 @@
                     <navigationItem key="navigationItem" title="Second" id="lwf-3n-lH4"/>
                     <connections>
                         <outlet property="label" destination="Jbf-n5-YVH" id="6XG-W3-DRl"/>
+                        <segue destination="Fof-ae-EG6" kind="unwind" unwindAction="AKBack:" id="Clh-Ut-etb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wOD-qt-dxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Fof-ae-EG6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="909" y="15"/>
         </scene>
